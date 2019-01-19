@@ -16,11 +16,12 @@
             url('images/hstat.jpg');
             background-repeat: no-repeat;
             background-size: cover;
+            /*Over flow will allow you to decide what to do with informations that's more than the webpage.*/
             overflow: scroll;
             position: relative;
             bottom: 4px;
         }
-        
+        /*> means that selecting the p right under class 'background'*/
         .background>p {
             color: white;
             font-size: 60px;
@@ -33,6 +34,7 @@
             animation-duration: 10s;
             animation-iteration-count: infinite;
         }
+        /*The following container is responsible for the animation. Which in this case is changing color*/
         @keyframes bordercolor {
             0% {background-color:#32B92D}
             25% {background-color:#FF6EB0}
@@ -41,6 +43,7 @@
             100% {background-color:#B84B9E}
         }
         .mrmueller {
+            /*padding is the amount of space between the mueller image and the title "Welcome to HSTAT"*/
             padding: 100px;
             border-radius: 50%;
             transition: transform 2s ease-in-out;
